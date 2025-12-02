@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug example",
+      "cargo": {
+        "args": ["build", "--example", "${fileBasenameNoExtension}"]
+      },
+      "program": "${workspaceFolder}/target/debug/examples/${fileBasenameNoExtension}",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
